@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <link rel="stylesheet" href="./Snake.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="SnakeImg">
+        <img id="Snake" style="display: block;" src="./Snake.png" alt="Snake" onclick="Img()">  
+    </div>
+    <div id="Game"style="display: none;">
+        <div class="SnakeGame">
+            <div class="game-header">
+                <div class="game-score">
+                    <span class="title">Ваш результат:</span>
+                    <span class="score-count"></span>
+                </div>
+                <div class="best-score">
+                    <span class="title">Лучший результат:</span>
+                    <span class="score-best"></span>
+                </div>
+            </div>
+            <div class="canvas-wrapper">
+                <canvas id="game-canvas" width="300px" height="300px"></canvas>
+            </div>
+            <button>Начать заново</button>
+        </div>
+
+    </div>
+    
+    <script src="./Main.js"></script>
+</body>
+</html>
